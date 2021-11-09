@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-pr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você e Gringo</title>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+    Digite sau nacionalidade: <input type="text" name="txt" id="txt">
+    <button onclick="verificar()">Verificar</button>
+    <div id="res">
+
+    </div>
+
+    <script>
+        
+        var pais = window.document.getElementById('txt')
+
+        function verificar() {
+            
+            var res = window.document.getElementById('res')
+                     if (pais != 'brasil') {
+                        res.innerHTML = 'Você é Brasileiro!'
+
+                    }else{
+                        res.innerHTML = 'Você é Estrangeiro!' 
+                    }
+        }
+    </script>
+</body>
+</html>
